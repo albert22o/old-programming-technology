@@ -1,0 +1,1 @@
+Примеры работ со старшего курса: https://github.com/MangriMen/SibSUTIS7semester/tree/mangrimen/STP1
