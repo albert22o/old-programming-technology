@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule"
+		},
+		{
+			"file" : "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

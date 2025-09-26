@@ -1,0 +1,24 @@
+digraph OddDigitsReversed {
+  node [shape=box];
+
+  Start    [label="Start"];
+  Abs      [label="x = abs(a)"];
+  LoopInit [label="b = 0; found = false"];
+  WhileCond[label="x > 0?"];
+  GetDigit [label="d = x % 10"];
+  IsOdd    [label="d % 2 == 1?"];
+  Add      [label="b = b*10 + d; found = true"];
+  Continue [label="x /= 10"];
+  End      [label="return b"];
+
+  Start -> Abs;
+  Abs -> LoopInit;
+  LoopInit -> WhileCond;
+  WhileCond -> End  [label="no"];
+  WhileCond -> GetDigit [label="yes"];
+  GetDigit -> IsOdd;
+  IsOdd -> Add  [label="yes"];
+  IsOdd -> Continue [label="no"];
+  Add -> Continue;
+  Continue -> WhileCond;
+}

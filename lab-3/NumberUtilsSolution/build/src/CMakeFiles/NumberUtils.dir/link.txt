@@ -1,0 +1,2 @@
+/usr/bin/ar qc libNumberUtils.a CMakeFiles/NumberUtils.dir/NumberUtils.cpp.o
+/usr/bin/ranlib libNumberUtils.a
