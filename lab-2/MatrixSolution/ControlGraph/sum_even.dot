@@ -1,0 +1,58 @@
+digraph SumEvenUGP {
+node [shape=box];
+Start -> CheckNull;
+CheckNull [label="A == null?"];
+CheckNull -> ThrowNull [label="yes"];
+CheckNull -> GetDims [label="no"];
+
+
+ThrowNull [shape=diamond,label="throw ArgumentNullException"];
+
+
+GetDims [label="rows = GetLength(0); cols = GetLength(1)"];
+GetDims -> CheckEmpty;
+CheckEmpty [label="rows==0 || cols==0?"];
+CheckEmpty -> ReturnZero [label="yes"];
+CheckEmpty -> InitLoop [label="no"];
+
+
+ReturnZero [shape=diamond,label="return 0.0"];
+
+
+InitLoop [label="sum=0; i=0"];
+InitLoop -> OuterLoop;
+
+
+OuterLoop [label="i < rows?", shape=diamond];
+OuterLoop -> End [label="no"];
+OuterLoop -> InnerInit [label="yes"];
+
+
+InnerInit [label="j=0"];
+InnerInit -> InnerLoop;
+
+
+InnerLoop [label="j < cols?", shape=diamond];
+InnerLoop -> NextI [label="no"];
+InnerLoop -> CheckParity [label="yes"];
+
+
+CheckParity [label="(i+j) %2 ==0?", shape=diamond];
+CheckParity -> Add [label="yes"];
+CheckParity -> IncJ [label="no"];
+
+
+Add [label="sum += A[i,j];"];
+Add -> IncJ;
+
+
+IncJ [label="j++"];
+IncJ -> InnerLoop;
+
+
+NextI [label="i++"];
+NextI -> OuterLoop;
+
+
+End [shape=diamond,label="return sum"];
+}

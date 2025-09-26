@@ -1,0 +1,58 @@
+digraph MaxDiagUGP {
+node [shape=box];
+Start -> CheckNull;
+CheckNull [label="A == null?"];
+CheckNull -> ThrowNull [label="yes"];
+CheckNull -> GetDims [label="no"];
+
+
+ThrowNull [shape=diamond,label="throw ArgumentNullException"];
+
+
+GetDims [label="rows = GetLength(0); cols = GetLength(1)"];
+GetDims -> CheckEmpty;
+CheckEmpty [label="rows==0 || cols==0?"];
+CheckEmpty -> ThrowEmpty [label="yes"];
+CheckEmpty -> InitSearch [label="no"];
+
+
+ThrowEmpty [shape=diamond,label="throw ArgumentException (empty array)"];
+
+
+InitSearch [label="found=false; max=-inf; i=0"];
+InitSearch -> OuterLoop;
+
+
+OuterLoop [label="i < rows?", shape=diamond];
+OuterLoop -> End [label="no"];
+OuterLoop -> InnerInit [label="yes"];
+
+
+InnerInit [label="j=0"];
+InnerInit -> InnerLoop;
+
+
+InnerLoop [label="j < cols?", shape=diamond];
+InnerLoop -> NextI [label="no"];
+InnerLoop -> CheckIgeJ [label="yes"];
+
+
+CheckIgeJ [label="i >= j?", shape=diamond];
+CheckIgeJ -> IncJ [label="no"];
+CheckIgeJ -> IfNotFound [label="yes"];
+
+
+IfNotFound [label="if !found -> max=A[i,j]; found=true; else if A[i,j]>max -> max = A[i,j]"];
+IfNotFound -> IncJ;
+
+
+IncJ [label="j++"];
+IncJ -> InnerLoop;
+
+
+NextI [label="i++"];
+NextI -> OuterLoop;
+
+
+End [shape=diamond,label="return max"];
+}
