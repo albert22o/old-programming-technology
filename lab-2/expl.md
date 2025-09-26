@@ -1,3 +1,14 @@
+## Компиляция и запуск
+```
+dotnet build
+dotnet tests
+```
+### Сборка графического представления УГП
+```
+dot -Tpng max_diag.dot -o max_diag.png
+dot -Tpng sum_even.dot -o sum_even.png
+```
+
 ## SumElementsWithEvenIndexSum
 
 ### Тесты
