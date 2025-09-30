@@ -22,20 +22,8 @@
 
 ### 2.1. Функция `min3(x, y, z)`
 **УГП:**
-![min3](/diagrams/mi3.png)
-```
-(1)
-↓
-(2)
-↓
-(3)
-├─ → (4)
-└─ → (5)
-(5)
-├─ → (6)
-└─ → (7)
-(6) → (7)
-```
+
+![min3](project/diagrams/min3.png)
 
 **Тестовые наборы:**
 - `(3,2,1)` → ожидается `1` (оба условия выполняются).  
@@ -47,21 +35,8 @@
 
 ### 2.2. Функция `sumEvenIndexSum(A)`
 **УГП:**
-![sumEvenIndexSum](/diagrams/sumEvenIndexSum.png)
-```
-(1) 
-↓
-(2) 
-├─ → (3) 
-└─ → (4)
-↓
-(5)
-↓
-(6)
-├─ → (7)
-↓
-(8)
-```
+
+![sumEvenIndexSum](project/diagrams/sumEvenIndexSum.png)
 
 **Тестовые наборы:**
 - `A = { {1,2}, {3,4} }` → чётные индексы: (0,0)=1, (1,1)=4 → результат `5`.  
@@ -72,21 +47,8 @@
 
 ### 2.3. Функция `maxOnAndBelowMainDiagonal(A)`
 **УГП:**
-![maxOnAndBelowMainDiagonal](/diagrams/maxOnAndBelowMainDiagonal.png)
-```
-(1) 
-↓
-(2) 
-├─ → (3) 
-└─ → (4) 
-↓
-(5) 
-↓
-(6) 
-├─ → (7)
-↓
-(8) 
-```
+
+![maxOnAndBelowMainDiagonal](project/diagrams/maxOnAndBelowMainDiagonal.png)
 
 **Тестовые наборы:**
 - `A = { {1,2,3}, {4,5,6}, {7,8,9} }` → максимум на/ниже диагонали = `9`.  
