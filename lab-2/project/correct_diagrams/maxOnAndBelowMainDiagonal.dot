@@ -1,0 +1,21 @@
+digraph MaxOnAndBelow {
+  node [shape=circle, style=filled, fillcolor=white];
+  1 [label="1\nstart"];
+  2 [label="2\nA.empty()?"];
+  3 [label="3\nthrow invalid_argument"];
+  4 [label="4\nfor i"];
+  5 [label="5\nfor j"];
+  6 [label="6\ni >= j ?"];
+  7 [label="7\nupdate mx"];
+  8 [label="8\nif found? return mx else throw"];
+
+  1 -> 2;
+  2 -> 3 [label="true"];
+  2 -> 4 [label="false"];
+  4 -> 5;
+  5 -> 6;
+  6 -> 7 [label="true"];
+  6 -> 5 [label="false", style=dashed];
+  7 -> 5;
+  5 -> 8 [label="loops done"];
+}
