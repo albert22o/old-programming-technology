@@ -1,0 +1,17 @@
+digraph Cyclic_Clean {
+  node [shape=box];
+  Start [label="Start"];
+  CheckK [label="if k <= 0 -> return n"];
+  ToStr [label="s = to_string(abs(n)), len = s.size()"];
+  ModK [label="k = k % len"];
+  CheckZero [label="if k == 0 -> return n"];
+  Build [label="res = last k digits + first len-k digits"];
+  Convert [label="val = stoll(res); apply sign; return val"];
+  Start -> CheckK;
+  CheckK -> ToStr [label="no"];
+  CheckK -> Convert [label="yes", style=dashed];
+  ToStr -> ModK -> CheckZero;
+  CheckZero -> Build [label="no"];
+  CheckZero -> Convert [label="yes", style=dashed];
+  Build -> Convert;
+}

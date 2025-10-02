@@ -1,5 +1,0 @@
-if(EXISTS "/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/tests/Tests[1]_tests.cmake")
-  include("/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-3/NumberUtilsSolution/build/tests/Tests[1]_tests.cmake")
-else()
-  add_test(Tests_NOT_BUILT Tests_NOT_BUILT)
-endif()

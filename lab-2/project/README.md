@@ -33,10 +33,10 @@ cmake --build . --config Debug
 
 ```bash
 # Linux/macOS
-./tests_simple
+./tests
 
 # Windows
-.\tests_simple.exe
+.\tests.exe
 ```
 
 Пример вывода:

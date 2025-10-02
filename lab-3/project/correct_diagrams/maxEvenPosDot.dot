@@ -1,0 +1,20 @@
+digraph MaxEvenPos_Clean {
+  node [shape=box];
+  Start [label="Start"];
+  ToStr [label="s = to_string(abs(n)), len = s.size()"];
+  ForLoop [label="for pos = 1..len (right->left)"];
+  IsEvenPos [label="pos % 2 == 0 ?"];
+  Digit [label="digit = s[len-pos] - '0'"];
+  IsEvenDigit [label="digit % 2 == 0 ?"];
+  Update [label="if digit > best -> best=digit; bestPos=pos"];
+  End [label="Return bestPos (0 if none)"];
+  Start -> ToStr -> ForLoop;
+  ForLoop -> IsEvenPos;
+  IsEvenPos -> Digit [label="yes"];
+  IsEvenPos -> ForLoop [label="no"];
+  Digit -> IsEvenDigit;
+  IsEvenDigit -> Update [label="yes"];
+  IsEvenDigit -> ForLoop [label="no"];
+  Update -> ForLoop;
+  ForLoop -> End [label="done"];
+}

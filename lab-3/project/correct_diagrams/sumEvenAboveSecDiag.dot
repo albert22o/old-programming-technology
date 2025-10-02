@@ -1,0 +1,20 @@
+digraph SumEvenAbove_Clean {
+  node [shape=box];
+  Start [label="Start"];
+  CheckEmpty [label="if A.empty() -> return 0"];
+  ForI [label="for i = 0..rows-1"];
+  ForJ [label="for j = 0..rowCols-1"];
+  AboveSec [label="if j < cols-1-i (above sec diag)"];
+  EvenCheck [label="if A[i][j] even then sum += A[i][j]"];
+  End [label="Return sum"];
+  Start -> CheckEmpty;
+  CheckEmpty -> ForI [label="no"];
+  CheckEmpty -> End [label="yes", style=dashed];
+  ForI -> ForJ;
+  ForJ -> AboveSec;
+  AboveSec -> EvenCheck [label="yes"];
+  AboveSec -> ForJ [label="no", style=dashed];
+  EvenCheck -> ForJ;
+  ForJ -> ForI [label="next row"];
+  ForI -> End [label="done"];
+}

@@ -1,0 +1,19 @@
+digraph BuildB_Clean {
+  node [shape=box, style=rounded];
+  Start [label="Start"];
+  Init [label="Init: b=0; x=abs(a)"];
+  LoopCond [label="x > 0?"];
+  GetDigit [label="d = x % 10"];
+  CheckOdd [label="d odd?"];
+  Append [label="b = b*10 + d"];
+  Next [label="x = x / 10"];
+  Return [label="Return b (or 0 if none)"];
+  Start -> Init -> LoopCond;
+  LoopCond -> GetDigit [label="yes"];
+  LoopCond -> Return [label="no"];
+  GetDigit -> CheckOdd;
+  CheckOdd -> Append [label="yes"];
+  CheckOdd -> Next [label="no"];
+  Append -> Next;
+  Next -> LoopCond;
+}

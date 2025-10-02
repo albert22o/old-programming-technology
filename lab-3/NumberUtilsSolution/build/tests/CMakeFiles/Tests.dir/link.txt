@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Tests.dir/test_number_utils.cpp.o -o Tests  ../lib/libgtest_main.a ../src/libNumberUtils.a ../lib/libgtest.a 
