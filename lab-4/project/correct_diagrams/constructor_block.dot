@@ -1,0 +1,9 @@
+digraph ConstructorBlock {
+  node [shape=box];
+  Start -> CheckRows;
+  CheckRows -> CheckCols;
+  CheckCols -> Alloc;
+  CheckRows -> ErrorRows [label="if rows<=0"];
+  CheckCols -> ErrorCols [label="if cols<=0"];
+  Alloc -> End;
+}

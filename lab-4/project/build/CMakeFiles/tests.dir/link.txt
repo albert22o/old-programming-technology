@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tests.dir/tests/MatrixTests.cpp.o -o tests  libmatrixlib.a 

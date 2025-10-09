@@ -1,0 +1,9 @@
+digraph MinBlock {
+  node [shape=box];
+  Start -> InitMin;
+  InitMin -> LoopAll;
+  LoopAll -> Compare;
+  Compare -> Update;
+  Update -> LoopAll;
+  LoopAll -> End;
+}

@@ -1,0 +1,11 @@
+digraph MulBlock {
+  node [shape=box];
+  Start -> CheckDims;
+  CheckDims -> LoopI;
+  CheckDims -> Error [label="if mismatch"];
+  LoopI -> LoopJ;
+  LoopJ -> LoopK;
+  LoopK -> Accumulate;
+  Accumulate -> Set;
+  Set -> End;
+}

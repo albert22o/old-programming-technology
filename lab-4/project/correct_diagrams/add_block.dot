@@ -1,0 +1,8 @@
+digraph AddBlock {
+  node [shape=box];
+  Start -> DimCheck;
+  DimCheck -> LoopIJ [label="if dims equal"];
+  DimCheck -> Error [label="else"];
+  LoopIJ -> Compute;
+  Compute -> End;
+}

@@ -1,0 +1,8 @@
+digraph TranspBlock {
+  node [shape=box];
+  Start -> CheckSquare;
+  CheckSquare -> LoopIJ [label="if square"];
+  CheckSquare -> Error [label="else"];
+  LoopIJ -> SetTransposed;
+  SetTransposed -> End;
+}

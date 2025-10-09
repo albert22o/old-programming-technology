@@ -1,0 +1,7 @@
+digraph IndexerBlock {
+  node [shape=box];
+  Start -> CheckIndices;
+  CheckIndices -> GetOrSet;
+  CheckIndices -> Error [label="if invalid"];
+  GetOrSet -> End;
+}
