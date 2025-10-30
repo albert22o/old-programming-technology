@@ -1,0 +1,8 @@
+digraph CheckSame {
+  node [shape=circle, style=filled, fillcolor=white];
+  1 -> 2;
+  2 -> 3;
+  2 -> 4;
+  3 -> 5;
+  4 -> 5;
+}

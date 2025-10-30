@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtpnumber.a CMakeFiles/tpnumber.dir/src/TPNumber.cpp.o
+/usr/bin/ranlib libtpnumber.a

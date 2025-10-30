@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tests.dir/tests/TPNumberTests.cpp.o -o tests  libtpnumber.a 
