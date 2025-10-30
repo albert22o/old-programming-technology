@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tests.dir/tests/EditorTests.cpp.o -o tests  libUEditor.a 

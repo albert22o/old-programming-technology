@@ -1,0 +1,2 @@
+/usr/bin/ar qc libUEditor.a CMakeFiles/UEditor.dir/src/UEditor.cpp.o
+/usr/bin/ranlib libUEditor.a
