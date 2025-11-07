@@ -1,0 +1,4 @@
+/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-7/project/build/CMakeFiles/main.dir
+/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-7/project/build/CMakeFiles/tests.dir
+/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-7/project/build/CMakeFiles/edit_cache.dir
+/home/danyowoj/Documents/GitHub/C4S1/old-programming-technology/lab-7/project/build/CMakeFiles/rebuild_cache.dir
